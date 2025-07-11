@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SENAI</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .default {
+        background-color: #eeeeee;
+        width: 1200px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .menu {
+        background-color: #004080;
+        width: 100%;
+        height: 70px;
+        position: absolute;
+        top: 0;
+        display: flex;  /* Ativa o modelo Flexbox */
+        justify-content: space-between;  /* Espaça os itens à esquerda e à direita */
+        align-items: center;  /* Centraliza os itens verticalmente */
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .rodape{
+        background-color:#004080;
+        width: 100%;
+        height: 70px;
+        position: absolute;
+        bottom: 0;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+    .corpo{
+        background-color: white;
+        width: 800px;
+        height: 750px;
+        top: 70px;
+        position: absolute;
+        padding: 20px 30px;
+        box-sizing: border-box;
+        overflow-y: auto;
+    }
+    
+    .left-item {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .right-items {
+        display: flex;  /* Ativa o Flexbox para os itens à direita */
+        justify-content: flex-end;  /* Alinha os itens à direita */
+    }
+
+    .item {
+        margin: 0 15px;
+        font-size: 16px;
+        color: white;
+        cursor: pointer;
+        user-select: none;
+    }
+    h3{
+        color: #004080;
+        padding-bottom: 10px;
+        margin: 0;
+    }
+    p{
+        padding-bottom: 20px;
+        margin: 0;
+        font-size: 14px;
+    }
+    .curso {
+        background-color:#eeeeee;
+        padding: 8px 10px;
+        margin-bottom: 8px;
+        font-size: 14px;
+        border-radius: 3px;
+    }
+    .contato {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+</style>
+</head>
+<body>
+    <div class="default">
+        <div class="menu">
+            <div class="left-item">SENAI</div> <!-- Item à esquerda -->
+            <div class="right-items"> <!-- Itens à direita -->
+                <div class="item">Sobre</div>
+                <div class="item">Cursos</div>
+                <div class="item">Contato</div>
+            </div>
+        </div>
+        <div class="rodape">© 2025 SENAI - Serviço Nacional de Aprendizagem Industrial</div>
+        <div class="corpo">
+            <h3>Sobre o SENAI</h3>
+            <p>O SENAI é uma das principais instituições de educação profissional do Brasil. Nossa missão é preparar os jovens e trabalhadores para o mercado de trabalho com foco em inovação, tecnologia e indústria 4.0.</p>
+            
+            <h3>Cursos Técnicos</h3>
+            <div class="curso">Técnico em Desenvolvimento de Sistemas</div>
+            <div class="curso">Técnico em Mecatrônica</div>
+            <div class="curso">Técnico em Eletrotécnica</div>
+            <div class="curso">Técnico em Logística</div>
+            <div class="curso">Técnico em Administração</div>
+
+            <h3>Contato</h3>
+            <div class="contato">
+                <p>📍 Unidade SENAI Central - Rua da Indústria, 123, Centro</p>
+                <p>📞 (11) 4002-8922</p>
+                <p>📧 atendimento@senaibrasil.com.br</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
